@@ -1,0 +1,45 @@
+@import "var";
+@import "global";
+
+.header {
+  background: #ffffff;
+  opacity: 0.8;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  min-height: 117px;
+  width: 100%;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 0 18px;
+  }
+}
+.menu-phone a{
+  display: flex;
+  align-items: center;
+  span{
+    display: none;
+  }
+}
+.menu{
+  &__btn{
+    width: 50px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 50px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $black;
+      box-shadow: 0 14px 0 0 $black, 0 28px 0 0 $black;
+    }
+  }
+}
