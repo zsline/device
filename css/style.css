@@ -16,6 +16,10 @@
   src: local("gothic"), url("../fonts/Campanella.woff") format("woff"), url("../fonts/Campanella.ttf") format("truetype");
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #EBF0F3;
   color: #4F4F4F;
