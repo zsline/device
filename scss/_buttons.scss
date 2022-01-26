@@ -5,6 +5,15 @@
   font-size: 18px;
   line-height: 22px;
   color: #fff;
-  padding: 13px 44px;
+  padding: 12px 40px;
   border-radius: 8px;
+  box-sizing: border-box;
+  transform: all .3s;
+  max-width: 195px;
+  height: 48px;
+  &:hover{
+    background-color: #fff;
+    border: 1px solid $accent;
+    color: $accent;
+  }
 }

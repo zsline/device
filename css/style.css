@@ -57,8 +57,20 @@ h4 {
   font-size: 18px;
   line-height: 22px;
   color: #fff;
-  padding: 13px 44px;
+  padding: 12px 40px;
   border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: all .3s;
+          transform: all .3s;
+  max-width: 195px;
+  height: 48px;
+}
+
+.accent-btn:hover {
+  background-color: #fff;
+  border: 1px solid #CA4848;
+  color: #CA4848;
 }
 
 .header {
@@ -73,7 +85,7 @@ h4 {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 43px 0 18px;
+  padding: 18px 0;
   z-index: 100;
 }
 
@@ -153,7 +165,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 130px 0 50px 0;
+  padding: 110px 0 50px 0;
 }
 
 .head__inner {
@@ -190,6 +202,37 @@ h4 {
   padding: 30px 0 100px;
 }
 
+.head__slider .slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0;
+}
+
+.head__slider .slick-dots li {
+  margin: 0 30px;
+}
+
+.head__slider .slick-dots button {
+  border: none;
+  background-color: #CA4848;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+}
+
+.head__slider .slick-dots .slick-active button {
+  background-color: transparent;
+  border: 1px solid #CA4848;
+}
+
 .head__slider-item {
   margin: 0 auto;
 }
@@ -203,7 +246,10 @@ h4 {
 }
 
 .head__slider-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 400px;
+  width: 400px;
 }
 
 .head__slider-box {
