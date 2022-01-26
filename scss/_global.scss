@@ -1,8 +1,28 @@
+@font-face {
+	font-family: 'gothic';
+	src: url('../fonts/gothic.ttf');
+	src: local('gothic'), url('../fonts/gothic.woff') format('woff'), url('../fonts/gothic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'gothic-700';
+	src: url('../fonts/GOTHICB0.TTF');
+	src: local('gothic'), url('../fonts/GOTHICB0.woff') format('woff'), url('../fonts/GOTHICB0.TTF') format('truetype');
+}
+@font-face {
+	font-family: 'Campanella';
+	src: url('../fonts/Campanella.ttf');
+	src: local('gothic'), url('../fonts/Campanella.woff') format('woff'), url('../fonts/Campanella.ttf') format('truetype');
+}
 body{
 background-color: $bg-color;
+color: $black;
 min-width: 320px;
 overflow-x: hidden;
+font-family: 'gothic';
 }
 .container{
   padding: 0 10px;
+}
+.text-decor{
+  font-family: 'Campanella';
 }

@@ -1,36 +1,43 @@
 @import "var";
 @import "global";
+@import "buttons";
 
 .header {
-  background: #ffffff;
-  opacity: 0.8;
+  background: rgba($color: #fff, $alpha: 0.7);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right top, #fff 10%, transparent 50%, transparent 50%, #fff 70%);
+  border-image-slice: 1;
   backdrop-filter: blur(20px);
   position: fixed;
-  min-height: 117px;
+  top: 0;
   width: 100%;
-  &__inner{
+  padding: 43px 0 18px;
+  z-index: 100;
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 43px 0 18px;
   }
 }
-.menu-phone a{
+.menu-phone a {
   display: flex;
   align-items: center;
-  span{
-    display: none;
-  }
 }
-.menu{
-  &__btn{
+.phone-text {
+  font-family: "gothic-700";
+  display: none;
+  font-size: 16px;
+  line-height: 29px;
+}
+.menu {
+  &__btn {
     width: 50px;
     height: 32px;
     background-color: transparent;
     border: none;
     position: relative;
     cursor: pointer;
-    span{
+    span {
       position: absolute;
       top: 0;
       left: 0;
@@ -43,3 +50,65 @@
     }
   }
 }
+.head {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 130px 0 0 0;
+  &__inner {
+    text-align: center;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  &__slider {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    background: rgba($color: #fff, $alpha: 0.7);
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(to right top, #fff 10%, transparent 50%, transparent 50%, #fff 70%);
+    border-image-slice: 1;
+    backdrop-filter: blur(20px);
+    padding: 30px 0 100px;
+    &-item {
+      margin: 0 auto;
+    }
+    &-img {
+      margin: auto;
+      display: block;
+      max-width: 410px;
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        height: 400px;
+      }
+    }
+    &-box {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+  .item-title {
+    max-width: 176px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .text-decor {
+    font-size: 48px;
+    line-height: 77px;
+    color: $accent;
+  }
+  .accent-btn {
+    text-align: right;
+  }
+}
+
+@import "tablet480";
+@import "tablet768";
+@import "tablet1440";

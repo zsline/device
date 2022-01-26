@@ -1,21 +1,62 @@
+@font-face {
+  font-family: 'gothic';
+  src: url("../fonts/gothic.ttf");
+  src: local("gothic"), url("../fonts/gothic.woff") format("woff"), url("../fonts/gothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'gothic-700';
+  src: url("../fonts/GOTHICB0.TTF");
+  src: local("gothic"), url("../fonts/GOTHICB0.woff") format("woff"), url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: 'Campanella';
+  src: url("../fonts/Campanella.ttf");
+  src: local("gothic"), url("../fonts/Campanella.woff") format("woff"), url("../fonts/Campanella.ttf") format("truetype");
+}
+
 body {
   background-color: #EBF0F3;
+  color: #4F4F4F;
   min-width: 320px;
   overflow-x: hidden;
+  font-family: 'gothic';
 }
 
 .container {
   padding: 0 10px;
 }
 
+.text-decor {
+  font-family: 'Campanella';
+}
+
+.accent-btn {
+  display: inline-block;
+  background-color: #CA4848;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  padding: 13px 44px;
+  border-radius: 8px;
+}
+
 .header {
-  background: #ffffff;
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid transparent;
+  -o-border-image: linear-gradient(to right top, #fff 10%, transparent 50%, transparent 50%, #fff 70%);
+     border-image: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #fff), color-stop(50%, transparent), color-stop(50%, transparent), color-stop(70%, #fff));
+     border-image: linear-gradient(to right top, #fff 10%, transparent 50%, transparent 50%, #fff 70%);
+  border-image-slice: 1;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   position: fixed;
-  min-height: 117px;
+  top: 0;
   width: 100%;
+  padding: 43px 0 18px;
+  z-index: 100;
 }
 
 .header__inner {
@@ -28,7 +69,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 43px 0 18px;
 }
 
 .menu-phone a {
@@ -40,8 +80,11 @@ body {
           align-items: center;
 }
 
-.menu-phone a span {
+.phone-text {
+  font-family: "gothic-700";
   display: none;
+  font-size: 16px;
+  line-height: 29px;
 }
 
 .menu__btn {
@@ -64,5 +107,121 @@ body {
   background-color: #4F4F4F;
   -webkit-box-shadow: 0 14px 0 0 #4F4F4F, 0 28px 0 0 #4F4F4F;
           box-shadow: 0 14px 0 0 #4F4F4F, 0 28px 0 0 #4F4F4F;
+}
+
+.head {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 130px 0 0 0;
+}
+
+.head__inner {
+  text-align: center;
+}
+
+.head__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.head__slider {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  -o-border-image: linear-gradient(to right top, #fff 10%, transparent 50%, transparent 50%, #fff 70%);
+     border-image: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #fff), color-stop(50%, transparent), color-stop(50%, transparent), color-stop(70%, #fff));
+     border-image: linear-gradient(to right top, #fff 10%, transparent 50%, transparent 50%, #fff 70%);
+  border-image-slice: 1;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 30px 0 100px;
+}
+
+.head__slider-item {
+  margin: 0 auto;
+}
+
+.head__slider-img {
+  margin: auto;
+  display: block;
+  max-width: 410px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.head__slider-img img {
+  height: 400px;
+}
+
+.head__slider-box {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+.head .item-title {
+  max-width: 176px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.head .text-decor {
+  font-size: 48px;
+  line-height: 77px;
+  color: #CA4848;
+}
+
+.head .accent-btn {
+  text-align: right;
+}
+
+@media (min-width: 480px) {
+  .menu-phone {
+    margin: 0 30px 0 auto;
+  }
+  .phone-text {
+    display: block;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 22px 0;
+  }
+  .menu-phone {
+    margin: 0 30px 0 auto;
+  }
+  .phone-text {
+    display: block;
+    margin-right: 30px;
+    font-size: 24px;
+  }
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

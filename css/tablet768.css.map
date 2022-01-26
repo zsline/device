@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,KAAK;EACtB,AAAA,OAAO,CAAA;IACL,OAAO,EAAE,MAAM;GAChB;EACD,AAAA,WAAW,CAAC;IACV,MAAM,EAAE,aAAa;GACtB;EACD,AAAA,WAAW,CAAC;IACV,OAAO,EAAE,KAAK;IACd,YAAY,EAAE,IAAI;IAClB,SAAS,EAAE,IAAI;GAChB;EACD,AAAA,UAAU,CAAC;IACT,OAAO,EAAE,MAAM;GAChB",
+    "sources": [
+        "../scss/tablet768.scss"
+    ],
+    "names": [],
+    "file": "tablet768.css"
+}
