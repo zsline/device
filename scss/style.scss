@@ -67,11 +67,11 @@
   }
 }
 .head {
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 130px 0 0 0;
+  padding: 130px 0 50px 0;
   &__inner {
     text-align: center;
   }
@@ -128,6 +128,20 @@
   }
   .accent-btn {
     text-align: right;
+  }
+}
+.directions{
+  padding: 50px 0;
+  &__inner{
+    display: grid;
+    grid-gap: 50px;
+  }
+  &__item{
+    text-align: center;
+  }
+  &__title{
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 

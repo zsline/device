@@ -34,6 +34,12 @@ h1 {
   line-height: 59px;
 }
 
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
 .container {
   padding: 0 10px;
 }
@@ -143,11 +149,11 @@ h1 {
 }
 
 .head {
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 130px 0 0 0;
+  padding: 130px 0 50px 0;
 }
 
 .head__inner {
@@ -226,6 +232,25 @@ h1 {
 
 .head .accent-btn {
   text-align: right;
+}
+
+.directions {
+  padding: 50px 0;
+}
+
+.directions__inner {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 50px;
+}
+
+.directions__item {
+  text-align: center;
+}
+
+.directions__title {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 @media (min-width: 480px) {
