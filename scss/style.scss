@@ -49,6 +49,22 @@
       box-shadow: 0 14px 0 0 $black, 0 28px 0 0 $black;
     }
   }
+  &__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 140px 0 80px;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateY(-400px);
+    transition: all 0.3s;
+    z-index: -1;
+    &-active {
+      transform: translateY(0px);
+    }
+  }
 }
 .head {
   height: 100vh;

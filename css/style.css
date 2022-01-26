@@ -109,6 +109,27 @@ body {
           box-shadow: 0 14px 0 0 #4F4F4F, 0 28px 0 0 #4F4F4F;
 }
 
+.menu__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 140px 0 80px;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.menu__box-active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 .head {
   height: 100vh;
   background-repeat: no-repeat;
