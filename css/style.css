@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'gothic';
+  font-family: "gothic";
   src: url("../fonts/gothic.ttf");
   src: local("gothic"), url("../fonts/gothic.woff") format("woff"), url("../fonts/gothic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'gothic-700';
+  font-family: "gothic-700";
   src: url("../fonts/GOTHICB0.TTF");
   src: local("gothic"), url("../fonts/GOTHICB0.woff") format("woff"), url("../fonts/GOTHICB0.TTF") format("truetype");
 }
 
 @font-face {
-  font-family: 'Campanella';
+  font-family: "Campanella";
   src: url("../fonts/Campanella.ttf");
   src: local("gothic"), url("../fonts/Campanella.woff") format("woff"), url("../fonts/Campanella.ttf") format("truetype");
 }
@@ -21,7 +21,13 @@ body {
   color: #4F4F4F;
   min-width: 320px;
   overflow-x: hidden;
-  font-family: 'gothic';
+  font-family: "gothic";
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
 }
 
 .container {
@@ -29,7 +35,9 @@ body {
 }
 
 .text-decor {
-  font-family: 'Campanella';
+  font-family: "Campanella";
+  font-size: 48px;
+  line-height: 77px;
 }
 
 .accent-btn {
@@ -150,6 +158,11 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+
+.head__info span {
+  font-size: 25px;
+  line-height: 31px;
 }
 
 .head__slider {
